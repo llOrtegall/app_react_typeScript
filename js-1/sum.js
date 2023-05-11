@@ -13,4 +13,4 @@ function Suma(num) {
 }
 
 //inserta el numero que quiere que se sume de forma consecutiva
-Suma(21);
+Suma(10);
