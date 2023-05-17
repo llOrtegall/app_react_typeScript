@@ -1,7 +1,5 @@
 function calcuarColor(num) {
-
   let color;
-
   if (num === 1) {
     color = "black";
   } else if (num === 2) {
@@ -11,7 +9,6 @@ function calcuarColor(num) {
   } else {
     color = "verde";
   }
-
   return console.log(`El Color Es: ${color}`);
 }
 
