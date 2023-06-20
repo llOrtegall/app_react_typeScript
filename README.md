@@ -1,2 +1,0 @@
-# aspirantes-mir-javascript
-Ejercicio 
