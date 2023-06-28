@@ -7,4 +7,4 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 app.use(cors());
 
-app.listen(PORT, () => console.log(`Listo por el puerto ${PORT}`))
+app.listen(PORT, () => console.log(`Listo por el puerto ${PORT}`));
