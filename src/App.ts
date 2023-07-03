@@ -10,5 +10,6 @@ const App = express();
 
 App.use(cors());
 App.use(router);
+App.use(express.json());
 db().then(() => console.log("Conecxión Realizada"));
 App.listen(PORT, () => console.log(`Iniciando por el puerto ${PORT}`))

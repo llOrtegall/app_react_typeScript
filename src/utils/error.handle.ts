@@ -1,8 +1,8 @@
 import { Response } from "express";
 
-const handleHttp = (res: Response, error: string) => {
+const handleHttp = (res: Response, e: string) => {
   res.status(500);
-  res.send({ error });
+  res.send({ e });
 }
 
 export { handleHttp };
