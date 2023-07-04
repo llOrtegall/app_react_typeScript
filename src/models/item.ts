@@ -5,28 +5,28 @@ const ItemSchema = new Schema<Car>(
   {
     name: {
       type: String,
-      required: true
+      // required: true
     },
     color: {
       type: String,
-      required: true
+      // required: true
     },
     gas: {
       type: String,
-      enum: ["gasoline", "electric"],
-      required: true
+      //enum: ["gasoline", "electric"],
+      // required: true
     },
     year: {
       type: Number,
-      required: true
+      // required: true
     },
     description: {
       type: String,
-      required: true
+      // required: true
     },
     price: {
       type: Number,
-      required: true
+      // required: true
     }
   },
   {

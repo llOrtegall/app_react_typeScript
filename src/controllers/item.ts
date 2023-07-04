@@ -28,8 +28,8 @@ const postItem = async ({ body }: Request, res: Response) => {
   try {
     const responseItem = await insertItem(body);
     res.send(responseItem)
-  } catch (e) {
-    handleHttp(res, 'ERROR_POST_ITEM', e);
+  } catch (error) {
+    handleHttp(res, 'ERROR_POST_ITEM', error);
   }
 }
 
