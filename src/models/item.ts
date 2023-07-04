@@ -3,12 +3,15 @@ import { Car } from "../interfaces/car.interface";
 
 const ItemSchema = new Schema<Car>(
   {
+    name: {
+      type: String,
+    },
     color: {
       type: String,
     },
     gas: {
       type: String,
-      enum: ["gasoline", "electric"],
+      //enum: ["gasoline", "electric"],
     },
     year: {
       type: Number,
@@ -22,8 +25,8 @@ const ItemSchema = new Schema<Car>(
   },
   {
     timestamps: true,
-    versionKey: false
-  }
+    versionKey: false,
+  },
 );
 
 const ItemModel = model('items', ItemSchema);
