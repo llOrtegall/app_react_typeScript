@@ -11,7 +11,7 @@ const ItemSchema = new Schema<Car>(
     },
     gas: {
       type: String,
-      //enum: ["gasoline", "electric"],
+      enum: ["gasoline", "electric"],
     },
     year: {
       type: Number,
@@ -26,9 +26,9 @@ const ItemSchema = new Schema<Car>(
   {
     timestamps: true,
     versionKey: false,
-  },
+  }
 );
 
 const ItemModel = model('items', ItemSchema);
 
-export default ItemModel
+export default ItemModel;
