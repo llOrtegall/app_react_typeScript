@@ -1,5 +1,6 @@
 export const register = (req, res) => {
-  res.send('register')
+  console.log(req.body);
+  res.send('Registrando...');
 }
 
 export const login = (req, res) => {
