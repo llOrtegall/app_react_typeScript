@@ -3,23 +3,28 @@ import './styles.css'
 
 export function LoginForm () {
   return (
-    <form className='form_main'>
+    <section>
 
-      <article>
-        <Label>Usuario</Label>
-        <div className=''>
+      <form className='form_main'>
+
+        <figure className='form_icon'>
+          <img src='/vite.svg' alt='logo' width={100} />
+        </figure>
+
+        <article>
+          <Label>Usuario</Label>
           <Input name='username' type='text' placeholder='CP1118342523' autoComplete='username' required />
-        </div>
-      </article>
+        </article>
 
-      <article>
-        <Label>Contraseña</Label>
-        <div className=''>
+        <article>
+          <Label>Contraseña</Label>
           <Input name='password' type='password' placeholder='**********' autoComplete='password' required />
-        </div>
-      </article>
+        </article>
 
-      <Button>Iniciar Sesión</Button>
-    </form>
+        <Button>Iniciar Sesión</Button>
+      </form>
+
+    </section>
+
   )
 }
